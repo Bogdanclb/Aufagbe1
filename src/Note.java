@@ -38,9 +38,7 @@ public class Note {
         for (int i = 0; i < Noten.length; i++) {
             int x = Noten[i] / 5;
             if (Noten[i] >= 38) {
-                x = x+1;
-                x = x * 5;
-                if (x - Noten[i] < 3) {
+                if ((x+1)*5 - Noten[i] < 3) {
                     aufrundeNoten[i] = x;
                 }
             }
